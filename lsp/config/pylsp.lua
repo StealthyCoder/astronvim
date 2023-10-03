@@ -1,7 +1,18 @@
-return  {
-  settings  = {
+return {
+  settings = {
     pylsp = {
-      configurationSources = {"pycodestyle", "flake8", "black", "isort", "jedi_completion", "jedi_definition", "jedi_hover", "jedi_references", "jedi_signature_help", "jedi_symbols"},
+      configurationSources = {
+        "pycodestyle",
+        "flake8",
+        "black",
+        "isort",
+        "jedi_completion",
+        "jedi_definition",
+        "jedi_hover",
+        "jedi_references",
+        "jedi_signature_help",
+        "jedi_symbols",
+      },
       plugins = {
         jedi_completion = {
           enabled = true,
@@ -16,24 +27,27 @@ return  {
           enabed = true,
         },
         jedi_signature_help = {
-          enabled = true
+          enabled = true,
         },
         jedi_symbols = {
-          enabled = true
+          enabled = true,
         },
         pycodestyle = {
           enabled = true,
-          maxLineLength = 100
+          maxLineLength = 100,
         },
         black = {
           enabled = true,
-          line_length = 100
+          line_length = 100,
         },
         flake8 = {
           enabled = true,
-          maxLineLength = 100
-        }
-      }
-    }
-  }
+          maxLineLength = 100,
+        },
+        isort = {
+          enabled = true,
+        },
+      },
+    },
+  },
 }
