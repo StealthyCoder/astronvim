@@ -45,4 +45,7 @@ return {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
+  v = {
+    ["<leader>sc"] = { "<Esc>:'<,'>Silicon<cr>", desc = "Snapshot Code" },
+  },
 }
