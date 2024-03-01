@@ -35,6 +35,11 @@ return {
     ["<leader>fT"] = { "<cmd>:TodoTelescope<cr>", desc = "Search all todo comments" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    -- Setup tmux navigator bindings
+    ["<C-h>"] = { "<cmd> TmuxNavigateLeft<cr>", desc = "window left" },
+    ["<C-l>"] = { "<cmd> TmuxNavigateRight<cr>", desc = "window right" },
+    ["<C-j>"] = { "<cmd> TmuxNavigateDown<cr>", desc = "window down" },
+    ["<C-k>"] = { "<cmd> TmuxNavigateUp<cr>", desc = "window up" },
   },
   t = {
     -- setting a mapping to false will disable it
